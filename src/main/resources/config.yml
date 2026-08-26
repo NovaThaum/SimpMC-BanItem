@@ -1,0 +1,26 @@
+# 这两个白名单只绕过 banned-items.yml 的没收检查。
+# 白名单不会绕过下方的创造模式丢弃黑名单。
+whitelist:
+  users: []
+  uuids: []
+
+# 创造模式玩家不能把此列表中的物品丢到世界或从背包界面丢出。
+# 若同一物品也在 banned-items.yml 中：非白名单玩家优先被没收；
+# 白名单玩家不会被没收，但创造模式下仍无法丢弃。
+creative-drop:
+  enabled: true
+  blacklist:
+    - BEDROCK
+    - COMMAND_BLOCK
+    - CHAIN_COMMAND_BLOCK
+    - REPEATING_COMMAND_BLOCK
+    - STRUCTURE_BLOCK
+    - BARRIER
+
+messages:
+  confiscated: '&c违规物品已没收: &f{item} &7x{amount}'
+  creative-drop-blocked: '&c创造模式不能丢弃该物品: &f{item}'
+  reloaded: '&aSimpMC-BanItem 配置已重载。'
+  reload-failed: '&c配置重载失败，请查看控制台日志。'
+  no-permission: '&c你没有执行此命令的权限。'
+  usage: '&e用法: /banitem reload'

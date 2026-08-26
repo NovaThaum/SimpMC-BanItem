@@ -1,0 +1,9 @@
+# 违规物品独立保存在此文件中；修改后执行 /banitem reload。
+# 支持 Bukkit 材质名（BEDROCK）、完整名称（minecraft:bedrock）、
+# 命名空间通配符（minecraft:*）以及全局通配符（*）。
+banned-items:
+  - BEDROCK
+  - COMMAND_BLOCK
+  - CHAIN_COMMAND_BLOCK
+  - REPEATING_COMMAND_BLOCK
+  - STRUCTURE_BLOCK

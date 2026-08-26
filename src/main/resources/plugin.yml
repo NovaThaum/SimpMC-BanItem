@@ -1,0 +1,17 @@
+name: SimpMC-BanItem
+version: '${project.version}'
+main: cn.simpmc.banitem.BanItemPlugin
+description: Folia-safe interactive prohibited-item confiscation.
+api-version: '26.1'
+folia-supported: true
+authors: [SimpMC]
+commands:
+  banitem:
+    description: Manage SimpMC-BanItem
+    usage: /banitem reload
+    aliases: [bi]
+    permission: banitem.admin
+permissions:
+  banitem.admin:
+    description: Reload SimpMC-BanItem
+    default: op
